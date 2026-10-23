@@ -322,7 +322,7 @@ a.panel:hover { transform: translate(-3px, -3px); box-shadow: calc(var(--shadow)
 .alphabet button.is-active { background: var(--pink); }
 .alphabet button[data-letter=""] { padding: 0 12px; }
 .alphabet button[disabled] { border-color: #D8CDBC; color: #C6BAA8; background: transparent; box-shadow: none; }
-.terms { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.terms { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
 .termcard { padding: 0; }
 .termcard summary { list-style: none; display: flex; flex-direction: column; gap: 14px; padding: 30px 34px 34px; cursor: pointer; }
 .termcard summary::-webkit-details-marker { display: none; }
