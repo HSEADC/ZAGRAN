@@ -323,6 +323,7 @@ a.panel:hover { transform: translate(-3px, -3px); box-shadow: calc(var(--shadow)
 .alphabet button[data-letter=""] { padding: 0 12px; }
 .alphabet button[disabled] { border-color: #D8CDBC; color: #C6BAA8; background: transparent; box-shadow: none; }
 .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+.terms:not(:has(.termcard[open])) { grid-auto-rows: 1fr; }
 .termcard { padding: 0; }
 .termcard summary { list-style: none; display: flex; flex-direction: column; gap: 14px; padding: 30px 34px 34px; cursor: pointer; }
 .termcard summary::-webkit-details-marker { display: none; }
@@ -330,7 +331,7 @@ a.panel:hover { transform: translate(-3px, -3px); box-shadow: calc(var(--shadow)
 .termcard__title::after { content: "+"; flex: none; }
 .termcard[open] .termcard__title::after { content: "–"; }
 .termcard__en { font-size: 13px; color: var(--muted); margin-top: -6px; }
-.termcard summary p { margin: 0; font-size: 17px; line-height: 1.5; }
+.termcard summary p { margin: 0; min-height: 3em; font-size: 17px; line-height: 1.5; }
 .termcard__body { display: flex; flex-direction: column; gap: 12px; padding: 0 34px 30px; font-size: 16px; line-height: 1.55; }
 .termcard__body p { margin: 0; }
 .termcard__ex { padding: 12px 14px; border: 2px solid var(--ink); background: var(--white); }
