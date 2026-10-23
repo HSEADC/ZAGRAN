@@ -602,7 +602,7 @@ function countUp(els) {
   if (reduced) return;
   els.forEach((el, i) => {
     const m = el.textContent.match(/^(\d+)(%?)$/); if (!m) return;
-    const to = +m[1], t0 = performance.now() + i * 60, dur = 800;
+    const to = +m[1], t0 = performance.now() + i * 120, dur = 1500;
     const step = now => { const k = Math.min(1, Math.max(0, (now - t0) / dur)); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))) + m[2]; if (k < 1) requestAnimationFrame(step); };
     el.textContent = "0" + m[2]; requestAnimationFrame(step);
   });
@@ -615,12 +615,12 @@ function initAnimations() {
     if (!t.classList.contains("reveal") || t.classList.contains("is-in")) return;
     t.classList.add("is-in");
     countUp($$(".stat__num", t));
-    setTimeout(() => { t.classList.remove("reveal", "is-in"); t.style.removeProperty("--d"); }, 1400);
+    setTimeout(() => { t.classList.remove("reveal", "is-in"); t.style.removeProperty("--d"); }, 1800);
   };
   const io = new IntersectionObserver(entries => entries.forEach(en => { if (en.isIntersecting) { io.unobserve(en.target); show(en.target); } }), { rootMargin: "0px 0px -8% 0px" });
   els.forEach(el => {
     const sibs = [...el.parentElement.children].filter(c => c.matches(sel));
-    el.style.setProperty("--d", (Math.min(sibs.indexOf(el), 4) * 0.07) + "s");
+    el.style.setProperty("--d", (Math.min(sibs.indexOf(el), 5) * 0.12) + "s");
     el.classList.add("reveal"); io.observe(el);
   });
   // цифры на первом экране тоже считаем
