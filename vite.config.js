@@ -26,7 +26,7 @@ const pages = {
 
   // статьи: шаблон и статья-пример
   article: { file: 'pages/articles/article.html', chunks: allChunks },
-  freeEurope: { file: 'pages/articles/free-europe.html', chunks: allChunks },
+  ieltsRussia: { file: 'pages/articles/ielts-russia.html', chunks: allChunks },
 
   // тесты
   match: { file: 'pages/tests/match.html', chunks: allChunks },

@@ -25,7 +25,7 @@
   - feedback.html
   - /articles
     - article.html
-    - free-europe.html
+    - ielts-russia.html
   - /tests
     - match.html
     - quiz.html

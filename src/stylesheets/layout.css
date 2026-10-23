@@ -1,13 +1,3 @@
-/* контейнер и колонки */
+/* контейнер */
 .container { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
-
-/* две колонки: панель и контент */
-.split { display: grid; grid-template-columns: 340px 1fr; gap: 40px; padding: 48px 0 56px; align-items: start; }
-.split > * { min-width: 0; }
-.split__main { display: flex; flex-direction: column; gap: 64px; min-width: 0; }
-.panel {
-  position: sticky; top: 112px;
-  background: var(--white); border-radius: var(--r-xl);
-  padding: 32px 28px; display: flex; flex-direction: column; gap: 22px;
-}
-.panel__stub { margin-top: 4px; padding-top: 20px; border-top: 1px solid var(--raised); }
+.container > * { min-width: 0; }
