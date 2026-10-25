@@ -75,6 +75,10 @@
   .person { flex-direction: column; align-items: flex-start; min-height: 0; }
   .person__photo { width: 160px; height: 160px; }
   .person h3 { font-size: 26px; }
+  .grid-3.team { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .team .person { padding: 22px; }
+  .team .person__photo { width: 140px; height: 140px; }
+  .team .person h3 { font-size: 22px; }
   .what h3 { font-size: 26px; }
 
   .stub { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; }
@@ -218,7 +222,9 @@
   .step5 span { flex: 1 0 100%; margin: 0; }
   .info { min-height: 0; padding: 20px 18px; }
 
-  .person { flex-direction: row; align-items: center; padding: 18px; gap: 18px; }
+  .person, .team .person { flex-direction: row; align-items: center; padding: 18px; gap: 18px; }
+  .grid-3.team { grid-template-columns: 1fr; }
+  .team .person__photo { width: 96px; height: 96px; }
   .person__photo { width: 96px; height: 96px; }
   .person h3 { font-size: 20px; }
   .what { min-height: 0; padding: 22px 18px; gap: 12px; }
