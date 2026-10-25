@@ -120,7 +120,6 @@ document.addEventListener("click", e => {
   if (e.target.closest(".mnav__links a")) setMenu(false);
   if (e.target.closest('[data-action="menu-close"]')) { setMenu(false); return; }
   if (e.target.closest('[data-action="search"]')) { setMenu(false); openSearch(); return; }
-  if (e.target.closest("[data-instagram]")) { e.preventDefault(); toast("Instagram скоро появится"); return; }
   if (e.target.matches("[data-overlay]")) closeSearch();
 });
 
