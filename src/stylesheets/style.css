@@ -559,4 +559,3 @@ body.menu-open .mnav__links a:nth-child(6) { transition-delay: .25s; }
 .progress span.is-current { animation: jelly .5s; }
 /* команда из трёх: фото сверху, имя под ним */
 .team .person { flex-direction: column; align-items: flex-start; gap: 22px; min-height: 0; }
-.person__photo--mark { background: var(--paper) url(../images/favicon-192.png) center / 58% no-repeat; filter: none; }
