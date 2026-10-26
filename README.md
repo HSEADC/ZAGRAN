@@ -9,12 +9,6 @@
 - Прототип: [figma.com/proto/V4pHlkrNFszzDCHklpWUcg](https://www.figma.com/proto/V4pHlkrNFszzDCHklpWUcg?node-id=711-7786)
 - Исследование в FigJam: [figma.com/board/bSmRqusCqfIgL15LNzVYI8](https://www.figma.com/board/bSmRqusCqfIgL15LNzVYI8)
 
-## Скриншоты
-
-![Главная страница на десктопе, 1440px](src/ai/home-desktop.png)
-
-![Главная страница на телефоне, 414px](src/ai/home-mobile.png)
-
 ## Команда
 
 | Участник | Что делал(а) |
@@ -45,7 +39,6 @@ src/javascripts/        — точка входа, подключение сти
 src/javascripts/data/   — данные: 141 вуз, статьи, словарь, тесты, логотип
 src/fonts/              — Rubik и Golos Text в woff2
 src/public/images/      — фото вузов, фото команды, иконки сайта
-src/ai/                 — скриншоты для README
 docs/                   — собранный сайт для GitHub Pages
 ```
 
